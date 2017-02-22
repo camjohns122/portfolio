@@ -1,0 +1,105 @@
+html,body {
+    height: 100%;
+
+}
+
+body {
+    background-color:beige;
+    transition: background-color .5s;
+
+}
+/* .bg-2{
+    height: 100%;
+} */
+
+.sidenav {
+    height:100%;
+    width:0%; 
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:rgb(0, 0, 0);
+    opacity: 0.7;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.3s;
+    font-family:manifesto;
+    font-weight:bold;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 24px;
+    color:antiquewhite;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus {
+    color: darkred;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size:36px;
+    margin-left:50px;
+}
+
+
+
+#menuButton {
+    background-color: rgba(255,255,255, 0.0);
+    border:0px;
+}
+
+#menuButton:hover {
+    color:darkred;
+}
+
+@font-face {
+    font-family: manifesto;
+    src: url(MANIFESTO.ttf);
+}
+@font-face {
+    font-family: adam;
+    src: url(ADAM.otf);
+}
+
+#title {
+    font-family: manifesto;
+    font-size:72px;
+    font-weight:bold;
+
+    padding-top:15px;
+    padding-bottom:25px;
+    
+}
+#comingSoon{
+    font-family: adam;
+    font-size:36px;
+    border-style:dotted;
+    padding:15px;
+}
+
+#logo {
+    padding-bottom: 50px;
+    max-width: 75%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+@media screen and (max-width:450px) {
+    
+    .sidenav {
+        padding-top:15px;
+     }
+
+    .sidenav a {font-size:18px;}
+
+ 
+}
